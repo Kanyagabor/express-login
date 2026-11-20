@@ -10,6 +10,10 @@ import users from "./routes/users.js";
 const app= express();
 
 
+export const allRoles =["admin", "user"];
+
+
+
 app.use(express.json()); // ez a bodyt alakítja jsonné
 
 app.use("/api/registration",regisztracio);

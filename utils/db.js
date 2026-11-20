@@ -7,7 +7,7 @@ const dbConfig={
     password:process.env.DB_PWD??"",
     database:process.env.DB_NAME??"logingyak",
     port:Number(process.env.DB_PORT)??3307,
-    datestring:true
+    datestrings:true
 };
 
 const pool = mysql.createPool(dbConfig);
